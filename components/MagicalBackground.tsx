@@ -4,7 +4,7 @@ import { ImageBackground, StyleSheet, View } from 'react-native';
 export const MagicalBackground = memo(function MagicalBackground() {
   return (
     <ImageBackground
-      source={require('../wallpaper.png')}
+      source={require('../assets/wallpaper.png')}
       resizeMode="cover"
       style={StyleSheet.absoluteFill}
       imageStyle={styles.image}
