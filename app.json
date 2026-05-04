@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "owner": "nikolayevsk404",
+    "name": "Sorteador da Fairy Tail",
+    "slug": "sorteador-da-fairy-tail",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.jpg",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/fairy-tail-mark.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#16071e"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.jpg",
+        "backgroundColor": "#ff72cb"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.nikolayevsk.sorteadordafairytail"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e8f8d02c-c7b7-459a-b523-27a57afc4cca"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+export const theme = {
+  colors: {
+    bgTop: '#13031d',
+    bgBottom: '#2c0b4f',
+    pink: '#ff72cb',
+    pinkSoft: '#ff9de0',
+    lilac: '#b87cff',
+    violet: '#7b4dff',
+    blue: '#33d6ff',
+    gold: '#ffd76a',
+    text: '#fff7ff',
+    textMuted: '#e6cffe',
+    card: 'rgba(26, 16, 44, 0.58)',
+    cardStrong: 'rgba(33, 20, 56, 0.72)',
+    border: 'rgba(255, 255, 255, 0.24)',
+    shadow: 'rgba(51, 214, 255, 0.35)',
+    danger: '#ffc3d9',
+    success: '#9ef7d6',
+  },
+  spacing: {
+    xs: 8,
+    sm: 12,
+    md: 16,
+    lg: 20,
+    xl: 28,
+  },
+  radius: {
+    md: 20,
+    lg: 28,
+    xl: 36,
+  },
+};

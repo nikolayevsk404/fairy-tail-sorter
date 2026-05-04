@@ -1,0 +1,12 @@
+node_modules
+.expo
+.tmp-home
+dist
+web-build
+*.log
+.DS_Store
+*:Zone.Identifier
+*.zip
+npm-debug.*
+yarn-debug.*
+yarn-error.*
