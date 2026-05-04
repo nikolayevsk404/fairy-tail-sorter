@@ -1,6 +1,6 @@
 # Sorteador da Fairy Tail
 
-Aplicativo mobile em React Native com Expo e TypeScript para montar duplas, trios e quartetos sem repetir participantes, com persistencia offline via AsyncStorage.
+App feito para minha amada esposa, que sorteia nomes em duplas, trios e quartetos para sua guilda de desenhos, facilitando campeonatos e disputas sem repetir participantes; desenvolvido em React Native com Expo e TypeScript, com persistência offline via AsyncStorage.
 
 ## Estrutura
 
