@@ -11,7 +11,7 @@ export function HeaderBanner() {
           <Image source={require('../assets/fairy-tail-mark.png')} style={styles.logo} resizeMode="contain" />
         </View>
         <View style={styles.texts}>
-          <Text style={styles.title}>Sorteador da Fairy Tail</Text>
+          <Text style={styles.title}>Fairy Tail App</Text>
           <Text style={styles.subtitle}>Monte duplas, trios ou quartetos sem repetir participantes.</Text>
         </View>
       </View>

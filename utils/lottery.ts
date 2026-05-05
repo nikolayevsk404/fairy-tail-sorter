@@ -62,7 +62,7 @@ export function getStatusMessage(remainingCount: number, mode: DrawMode, hasGrou
 
 export function buildShareText(groups: DrawGroup[], remainingCount: number, mode: DrawMode) {
   const normalizedMode = sanitizeDrawMode(mode);
-  const title = `Sorteador da Fairy Tail • grupos de ${normalizedMode}`;
+  const title = `Fairy Tail App • grupos de ${normalizedMode}`;
 
   const groupsText = groups.length
     ? groups

@@ -139,7 +139,7 @@ export function useFairyTailDraw() {
   async function shareResults() {
     await Share.share({
       message: shareText,
-      title: 'Sorteador da Fairy Tail',
+      title: 'Fairy Tail App',
     });
   }
 

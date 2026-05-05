@@ -1,8 +1,8 @@
 {
   "expo": {
     "owner": "nikolayevsk404",
-    "name": "Sorteador da Fairy Tail",
-    "slug": "sorteador-da-fairy-tail",
+    "name": "Fairy Tail App",
+    "slug": "fairy-tail-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.jpg",
