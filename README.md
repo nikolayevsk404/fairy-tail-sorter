@@ -1,6 +1,6 @@
 # Fairy Tail Art Guild
 
-App feito para minha amada esposa, desenvolvido em React Native, Expo e TypeScript para gerenciar uma guilda mágica em formato de app, com sistema de sorteio de grupos, rankings, premiações, banimentos e backup local em JSON. O projeto possui uma interface inspirada em fantasia, utilizando cards translúcidos, brilho neon e persistência offline com AsyncStorage, facilitando campeonatos e disputas da guilda de forma prática e organizada.
+Aplicativo feito para minha amada esposa, desenvolvido em React Native, Expo e TypeScript para gerenciar uma guilda mágica em formato de app, com sistema de sorteio de grupos, rankings, premiações, banimentos e backup local em JSON. O projeto possui uma interface inspirada em fantasia, utilizando cards translúcidos, brilho neon e persistência offline com AsyncStorage, facilitando campeonatos e disputas da guilda de forma prática e organizada.
 
 ## Visao geral
 
