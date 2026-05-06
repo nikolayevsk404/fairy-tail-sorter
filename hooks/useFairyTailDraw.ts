@@ -14,7 +14,7 @@ const defaultState: LotteryState = {
   groups: [],
   mode: 2,
   isComplete: false,
-  statusMessage: 'Pronto para um novo sorteio magico ✨',
+  statusMessage: 'Pronto para um novo sorteio mágico ✨',
 };
 
 function buildStateFromInput(inputText: string, mode: DrawMode, previousGroups: DrawGroup[] = []): LotteryState {
@@ -40,7 +40,6 @@ export function useFairyTailDraw() {
   const [state, setState] = useState<LotteryState>(defaultState);
   const [isHydrated, setIsHydrated] = useState(false);
   const [isSorting, setIsSorting] = useState(false);
-  const [showCompletionBurst, setShowCompletionBurst] = useState(false);
 
   useEffect(() => {
     async function hydrate() {
@@ -114,10 +113,6 @@ export function useFairyTailDraw() {
       statusMessage: getStatusMessage(remainingParticipants.length, state.mode, nextGroups.length > 0),
     });
 
-    if (isComplete) {
-      setShowCompletionBurst(true);
-    }
-
     await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
 
     setTimeout(() => setIsSorting(false), 650);
@@ -131,6 +126,16 @@ export function useFairyTailDraw() {
     await saveLotteryState(freshState);
   }
 
+  async function replaceLotteryState(nextState?: LotteryState | null) {
+    const restoredState = nextState
+      ? buildStateFromInput(nextState.inputText ?? '', nextState.mode ?? defaultState.mode, nextState.groups ?? [])
+      : defaultState;
+
+    setState(restoredState);
+    await saveLotteryState(restoredState);
+    await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+  }
+
   async function copyResults() {
     await Clipboard.setStringAsync(shareText);
     await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -139,29 +144,19 @@ export function useFairyTailDraw() {
   async function shareResults() {
     await Share.share({
       message: shareText,
-      title: 'Fairy Tail App',
+      title: 'Fairy Tail Art Guild',
     });
   }
-
-  useEffect(() => {
-    if (showCompletionBurst) {
-      const timeout = setTimeout(() => {
-        setShowCompletionBurst(false);
-      }, 2400);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [showCompletionBurst]);
 
   return {
     state,
     isHydrated,
     isSorting,
-    shouldShowCompletionBurst: showCompletionBurst && !isSorting,
     updateInputText,
     updateMode,
     sortNextGroup,
     resetLottery,
+    replaceLotteryState,
     copyResults,
     shareResults,
   };

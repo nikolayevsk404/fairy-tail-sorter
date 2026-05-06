@@ -3,7 +3,13 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { GlassCard } from './GlassCard';
 import { theme } from '../utils/theme';
 
-export function HeaderBanner() {
+type HeaderBannerProps = {
+  title?: string;
+};
+
+export function HeaderBanner({
+  title = 'Fairy Tail Art Guild',
+}: HeaderBannerProps) {
   return (
     <GlassCard style={styles.wrapper}>
       <View style={styles.inner}>
@@ -11,8 +17,7 @@ export function HeaderBanner() {
           <Image source={require('../assets/fairy-tail-mark.png')} style={styles.logo} resizeMode="contain" />
         </View>
         <View style={styles.texts}>
-          <Text style={styles.title}>Fairy Tail App</Text>
-          <Text style={styles.subtitle}>Monte duplas, trios ou quartetos sem repetir participantes.</Text>
+          <Text style={styles.title}>{title}</Text>
         </View>
       </View>
     </GlassCard>

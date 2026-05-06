@@ -1,8 +1,8 @@
 {
   "expo": {
     "owner": "nikolayevsk404",
-    "name": "Fairy Tail App",
-    "slug": "fairy-tail-app",
+    "name": "Fairy Tail Art Guild",
+    "slug": "fairy-tail-art-guild",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.jpg",
@@ -29,7 +29,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "e8f8d02c-c7b7-459a-b523-27a57afc4cca"
+        "projectId": "1772fe75-80a4-4af2-ad6d-39630abea400"
       }
     }
   }

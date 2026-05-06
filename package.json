@@ -1,14 +1,19 @@
 {
-  "name": " fairy-tail-app",
+  "name": " fairy-tail-art-guild",
   "version": "1.0.0",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "start:clear": "expo start --clear",
+    "start:tunnel": "expo start --tunnel",
+    "start:lan": "expo start --lan",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "doctor": "expo-doctor",
+    "test": "tsc -p tsconfig.tests.json && node --test .test-dist/tests/*.test.js"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
@@ -20,7 +25,8 @@
     "expo-status-bar": "~55.0.5",
     "react": "19.2.0",
     "react-native": "0.83.6",
-    "react-native-gesture-handler": "~2.30.0"
+    "react-native-gesture-handler": "~2.30.0",
+    "react-native-safe-area-context": "~5.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",

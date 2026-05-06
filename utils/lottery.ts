@@ -50,19 +50,19 @@ export function getStatusMessage(remainingCount: number, mode: DrawMode, hasGrou
   const normalizedMode = sanitizeDrawMode(mode);
 
   if (remainingCount === 0 && hasGroups) {
-    return 'Todos os participantes ja foram sorteados ✨';
+    return 'Todos os participantes já foram sorteados ✨';
   }
 
   if (remainingCount > 0 && remainingCount < normalizedMode) {
     return 'Participantes insuficientes para formar novo grupo';
   }
 
-  return 'Pronto para um novo sorteio magico ✨';
+  return 'Pronto para um novo sorteio mágico ✨';
 }
 
 export function buildShareText(groups: DrawGroup[], remainingCount: number, mode: DrawMode) {
   const normalizedMode = sanitizeDrawMode(mode);
-  const title = `Fairy Tail App • grupos de ${normalizedMode}`;
+  const title = `Fairy Tail Art Guild • grupos de ${normalizedMode}`;
 
   const groupsText = groups.length
     ? groups

@@ -11,7 +11,7 @@ export function RemainingBadge({ remaining, total }: RemainingBadgeProps) {
   return (
     <View style={styles.badge}>
       <Text style={styles.text}>Participantes restantes: {remaining}</Text>
-      <Text style={styles.meta}>Total validos: {total}</Text>
+      <Text style={styles.meta}>Total válidos: {total}</Text>
     </View>
   );
 }

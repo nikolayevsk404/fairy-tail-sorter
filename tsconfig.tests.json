@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "node16",
+    "moduleResolution": "node16",
+    "target": "ES2022",
+    "outDir": ".test-dist",
+    "rootDir": ".",
+    "noEmit": false,
+    "declaration": false,
+    "sourceMap": false
+  },
+  "include": [
+    "tests/**/*.ts",
+    "utils/**/*.ts"
+  ]
+}
